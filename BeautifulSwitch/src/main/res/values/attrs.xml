@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BeautifulSwitch">
+
+        <attr name="enable" format="boolean" /><!--启用-->
+        <attr name="is_open" format="boolean" /><!--默认是否是开启的-->
+        <attr name="outline_open_color" format="color" /><!--开启的时候外框线颜色-->
+        <attr name="outline_close_color" format="color" /><!--关闭的时候外框线颜色-->
+        <attr name="inline_open_color" format="color" /><!--开启的时候内部的小圆颜色-->
+        <attr name="inline_close_color" format="color" /><!--关闭的时候内部小圆的颜色-->
+
+    </declare-styleable>
+
+</resources>

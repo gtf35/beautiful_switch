@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <top.gtf35.withyebai.BeautifulSwitch
+        android:id="@+id/beautiful_switch_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_one_statues"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_one_statues"
+        app:layout_constraintTop_toTopOf="@+id/tv_one_statues" />
+
+    <TextView
+        android:id="@+id/tv_one_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="正常使用的开关"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_one_statues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="状态:关"
+        app:layout_constraintStart_toEndOf="@+id/tv_one_tip"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_two_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="默认开启的开关"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_one_tip" />
+
+    <TextView
+        android:id="@+id/tv_two_statues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="状态:开"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_two_tip"
+        app:layout_constraintStart_toEndOf="@+id/tv_two_tip"
+        app:layout_constraintTop_toTopOf="@+id/tv_two_tip" />
+
+    <top.gtf35.withyebai.BeautifulSwitch
+        android:id="@+id/beautiful_switch_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:is_open="true"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_two_statues"
+        app:layout_constraintStart_toEndOf="@+id/tv_two_statues"
+        app:layout_constraintTop_toTopOf="@+id/tv_two_statues"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_three_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="自定颜色的开关"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_two_tip" />
+
+    <TextView
+        android:id="@+id/tv_three_statues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="状态:关"
+        app:layout_constraintBottom_toBottomOf="@id/tv_three_tip"
+        app:layout_constraintStart_toEndOf="@id/tv_three_tip"
+        app:layout_constraintTop_toTopOf="@id/tv_three_tip" />
+
+    <top.gtf35.withyebai.BeautifulSwitch
+        android:id="@+id/beautiful_switch_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:outline_open_color="@android:color/holo_blue_bright"
+        app:outline_close_color="@android:color/holo_blue_dark"
+        app:inline_open_color="@android:color/holo_green_light"
+        app:inline_close_color="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="@id/tv_three_statues"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_three_statues"
+        app:layout_constraintTop_toTopOf="@id/tv_three_statues" />
+
+    <TextView
+        android:id="@+id/tv_four_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="默认禁用的开关"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_three_tip" />
+
+    <TextView
+        android:id="@+id/tv_four_statues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="状态:关"
+        app:layout_constraintBottom_toBottomOf="@id/tv_four_tip"
+        app:layout_constraintStart_toEndOf="@id/tv_four_tip"
+        app:layout_constraintTop_toTopOf="@id/tv_four_tip" />
+
+    <top.gtf35.withyebai.BeautifulSwitch
+        android:id="@+id/beautiful_switch_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:enable="false"
+        app:layout_constraintBottom_toBottomOf="@id/tv_four_statues"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_four_statues"
+        app:layout_constraintTop_toTopOf="@id/tv_four_statues" />
+
+    <TextView
+        android:id="@+id/tv_five_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="代码控制的开关"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_four_tip" />
+
+    <TextView
+        android:id="@+id/tv_five_statues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="状态:关"
+        app:layout_constraintBottom_toBottomOf="@id/tv_five_tip"
+        app:layout_constraintStart_toEndOf="@id/tv_five_tip"
+        app:layout_constraintTop_toTopOf="@id/tv_five_tip" />
+
+    <top.gtf35.withyebai.BeautifulSwitch
+        android:id="@+id/beautiful_switch_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_five_statues"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_five_statues"
+        app:layout_constraintTop_toTopOf="@id/tv_five_statues"/>
+
+    <Button
+        android:id="@+id/btn_disable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="禁用"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_five_tip" />
+
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="打开"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_disable"
+        app:layout_constraintStart_toEndOf="@+id/btn_disable"
+        app:layout_constraintTop_toTopOf="@+id/btn_disable" />
+
+    <Button
+        android:id="@+id/btn_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="变色"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/btn_open"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_open"
+        app:layout_constraintTop_toTopOf="@+id/btn_open"/>
+
+    <TextView
+        android:id="@+id/tv_statue_listener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="状态监听:现在是关的"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_disable" />
+
+    <Button
+        android:id="@+id/btn_enable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="启用"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_statue_listener" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="关闭"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_enable"
+        app:layout_constraintStart_toEndOf="@+id/btn_enable"
+        app:layout_constraintTop_toTopOf="@+id/btn_enable" />
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="开/关"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_close"
+        app:layout_constraintStart_toEndOf="@+id/btn_close"
+        app:layout_constraintTop_toTopOf="@+id/btn_close" />
+
+    <Button
+        android:id="@+id/btn_set_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="设置为开启(特点是无动画)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_enable" />
+
+    <Button
+        android:id="@+id/btn_set_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="设置为关闭(特点是无动画)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_open" />
+
+    <Button
+        android:id="@+id/btn_get_isopen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="获取开关状态"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_close" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
