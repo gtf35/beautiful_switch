@@ -5,10 +5,10 @@
 [![](https://img.shields.io/github/stars/gtf35/beautiful_switch?style=for-the-badge)]()  [![](https://img.shields.io/github/forks/gtf35/beautiful_switch?style=for-the-badge)]()  [![](https://img.shields.io/github/release/gtf35/beautiful_switch?style=for-the-badge)](https://github.com/gtf35/beautiful_switch/releases) 
 
 ## 0 效果图
-![效果图](https://github.com/gtf35/beautiful_switch/blob/master/static/switch.gif)
+![效果图](http://cloud.gtf35.top/beautifulswitch/switch.gif)
 
 ## 1 设计图
-![设计图](https://github.com/gtf35/beautiful_switch/blob/master/static/yuanpic.png)
+![设计图](http://cloud.gtf35.top/beautifulswitch/yuanpic.png)
 
 ## 2 特性
    - 美观，ui设计师 夜白 设计
@@ -59,7 +59,7 @@
 
 ### 		5x0 demo 预览
 
-![demo预览](https://github.com/gtf35/beautiful_switch/blob/master/static/demopic.png)
+![demo预览](http://cloud.gtf35.top/beautifulswitch/demopic.png)
 
    	可以参考 demo ，在 demo 里有所有方法的演示
    	看 demo 运行理解，更高效
