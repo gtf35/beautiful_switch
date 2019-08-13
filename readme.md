@@ -60,13 +60,16 @@ beautifulSwitch.setOnSwitchClickListener(new BeautifulSwitch.OnClickListener() {
 
 ![demo预览](https://github.com/gtf35/beautiful_switch/blob/master/static/demopic.png)
 
-   	可以参考 demo ，在 demo 里有所有方法的演示
-   	看 demo 运行理解，更高效
+可以参考 demo ，在 demo 里有所有方法的演示
+
+看 demo 运行理解，更高效
 
 ### 	5x1 默认开启的开关
-   在xml使用 app:is_open="true" 属性可设置默认的状态
-   true 为默认开。 false 为默认关
-   需引入 app 的 xml 命名空间
+在xml使用 app:is_open="true" 属性可设置默认的状态
+
+true 为默认开。 false 为默认关
+
+需引入 app 的 xml 命名空间
 
 ```xml
 <top.gtf35.withyebai.BeautifulSwitch
@@ -77,12 +80,17 @@ beautifulSwitch.setOnSwitchClickListener(new BeautifulSwitch.OnClickListener() {
 
 ###		5x2 自定颜色的开关
 
-   在xml使用 app:outline_open_color="@android:color/holo_blue_bright" 属性可设置开关在开启时默认的外框线颜色
-   在xml使用 app:outline_close_color="@android:color/holo_blue_dark" 属性可设置开关在关闭时默认的外框线颜色
-   在xml使用 app:inline_open_color="@android:color/holo_green_light" 属性可设置开关在开启时默认的内部小圆颜色
-   在xml使用 app:inline_close_color="@android:color/holo_green_dark" 属性可设置开关在关闭时默认的内部小圆颜色
-   需引入 app 的 xml 命名空间
+在xml使用 app:outline_open_color="@android:color/holo_blue_bright" 属性可设置开关在开启时默认的外框线颜色 
+
+在xml使用 app:outline_close_color="@android:color/holo_blue_dark" 属性可设置开关在关闭时默认的外框线颜色
+
+在xml使用 app:inline_open_color="@android:color/holo_green_light" 属性可设置开关在开启时默认的内部小圆颜色
+
+在xml使用 app:inline_close_color="@android:color/holo_green_dark" 属性可设置开关在关闭时默认的内部小圆颜色
+
+需引入 app 的 xml 命名空间
         
+
 ```xml
 <top.gtf35.withyebai.BeautifulSwitch
         android:layout_width="wrap_content"
@@ -94,10 +102,14 @@ beautifulSwitch.setOnSwitchClickListener(new BeautifulSwitch.OnClickListener() {
 ```
 
 ###		5x3 默认禁用的开关
-   在xml使用 app:enable="false" 属性可设置默认的启用状态
-   true 为默认启用。 false 为默认禁用
-   在禁用状态下无法点击也不响应点击事件 (BeautifulSwitch.OnClickListener)
-   需引入 app 的 xml 命名空间
+在xml使用 app:enable="false" 属性可设置默认的启用状态
+
+true 为默认启用。 false 为默认禁用
+
+在禁用状态下无法点击也不响应点击事件 (BeautifulSwitch.OnClickListener)
+
+需引入 app 的 xml 命名空间
+
 ```xml
 <top.gtf35.withyebai.BeautifulSwitch
         android:layout_width="wrap_content"
