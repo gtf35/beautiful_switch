@@ -25,3 +25,22 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
+
+apply plugin: 'com.novoda.bintray-release'
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+def bintrayUserVal = properties.getProperty('bintrayUser')
+def bintrayKeyVal = properties.getProperty('bintrayKey')
+
+publish {
+    userOrg = 'gtfdeyouxiang'  //jcenter的用户名
+    groupId = 'top.gtf35.lib.withyebai'    //组织id
+    artifactId = 'BeautifulSwitch'    //libName
+    publishVersion = '1.0'        //libVersion
+    desc = 'an beautiful switch on Android'//lib desc
+    website = 'https://github.com/gtf35/beautiful_switch' //lib的地址
+    bintrayUser = bintrayUserVal //上面task中读取到的jcenterName
+    bintrayKey = bintrayKeyVal //上面task中读取到的apiKey
+    dryRun = false
+}
