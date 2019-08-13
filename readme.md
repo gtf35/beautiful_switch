@@ -25,30 +25,29 @@
 ### 	3x1 依赖：在 app 级别的 build.gradle 添加
 
 ```Gradle
-	dependencies {
-    	....
-    	implementation 'top.gtf35.lib.withyebai:BeautifulSwitch:1.0'
-    	....
-	}
+dependencies {
+   ....
+   implementation 'top.gtf35.lib.withyebai:BeautifulSwitch:1.0'
+   ....
+}
 ```
 
 ### 	3x2 引入：在 layout 布局文件中添加
 ```xml
-	<top.gtf35.withyebai.BeautifulSwitch
-    	android:layout_width="wrap_content"
-    	android:layout_height="wrap_content"
-    	android:layout_marginStart="8dp" />
+<top.gtf35.withyebai.BeautifulSwitch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 ```
 ### 	3x3 监听：在调用实例的 setOnSwitchClickListener 监听开关的点击事件
 
 ```java
-	beautifulSwitch.setOnSwitchClickListener(new BeautifulSwitch.OnClickListener() {
-    	@Override
-    	public void onClick(View v, boolean isOpen) {
-      	  //回调运行在主线程，可直接操作 UI
-      	  statuesTv.setText("状态:" + (isOpen? "开": "关"));
-   	 }
-	});
+beautifulSwitch.setOnSwitchClickListener(new BeautifulSwitch.OnClickListener() {
+    @Override
+    public void onClick(View v, boolean isOpen) {
+      	 //回调运行在主线程，可直接操作 UI
+      	 statuesTv.setText("状态:" + (isOpen? "开": "关"));
+   	}
+});
 ```
 
 
