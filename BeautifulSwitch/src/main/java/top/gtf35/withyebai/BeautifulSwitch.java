@@ -10,6 +10,8 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.RectF;
+import android.os.Bundle;
+import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -39,6 +41,16 @@ public class BeautifulSwitch extends View {
     private OnClickListener mOnClickListener;//点击监听器
     private OnSwitchChangeListener mOnSwitchChangeListener;//开关状态改变监听器
     private Infos mInfos = new Infos();
+
+    private final static String mEnableKey = "mEnable";
+    private final static String mIsOpenKey = "mIsOpen";
+    private final static String mProgressKey = "mProgress";
+    private final static String mStrokeWidthOpenColorKey = "mStrokeWidthOpenColor";
+    private final static String mStrokeWidthCloseColorKey = "mStrokeWidthCloseColor";
+    private final static String mStrokeWidthColorKey = "mStrokeWidthColor";
+    private final static String mSmallCircleOpenColorKey = "mSmallCircleOpenColor";
+    private final static String mSmallCircleCloseColorKey = "mSmallCircleCloseColor";
+    private final static String mSmallCircleColorKey = "mSmallCircleColor";
 
     /*点击回调接口*/
     public interface OnClickListener{
@@ -88,6 +100,41 @@ public class BeautifulSwitch extends View {
 
     public BeautifulSwitch(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+    }
+
+    /*在系统回收时保存状态*/
+    @Override
+    protected Parcelable onSaveInstanceState() {
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("superState", super.onSaveInstanceState());
+        bundle.putBoolean(mEnableKey, mEnable);
+        bundle.putBoolean(mIsOpenKey, mIsOpen);
+        bundle.putInt(mProgressKey, mProgress);
+        bundle.putInt(mStrokeWidthOpenColorKey, mStrokeWidthOpenColor);
+        bundle.putInt(mStrokeWidthCloseColorKey, mStrokeWidthCloseColor);
+        bundle.putInt(mStrokeWidthColorKey, mStrokeWidthColor);
+        bundle.putInt(mSmallCircleOpenColorKey, mSmallCircleOpenColor);
+        bundle.putInt(mSmallCircleCloseColorKey, mSmallCircleCloseColor);
+        bundle.putInt(mSmallCircleColorKey, mSmallCircleColor);
+        return bundle;
+    }
+
+    /*在系统重建的时候恢复状态*/
+    @Override
+    protected void onRestoreInstanceState(Parcelable state) {
+        if (state instanceof Bundle) {
+            Bundle bundle = (Bundle) state;
+            mEnable = bundle.getBoolean(mEnableKey, true);
+            mIsOpen = bundle.getBoolean(mIsOpenKey, false);
+            mProgress = bundle.getInt(mProgressKey, 0);
+            mStrokeWidthOpenColor = bundle.getInt(mStrokeWidthOpenColorKey);
+            mStrokeWidthCloseColor = bundle.getInt(mStrokeWidthCloseColorKey);
+            mStrokeWidthColor = bundle.getInt(mStrokeWidthColorKey);
+            mSmallCircleCloseColor = bundle.getInt(mSmallCircleCloseColorKey);
+            mSmallCircleColor = bundle.getInt(mSmallCircleColorKey);
+            state = bundle.getParcelable("superState");
+        }
+        super.onRestoreInstanceState(state);
     }
 
     /*开启的时候外框线颜色*/
