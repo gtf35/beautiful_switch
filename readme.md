@@ -27,7 +27,7 @@
 ```Gradle
 dependencies {
    ....
-   implementation 'top.gtf35.lib.withyebai:BeautifulSwitch:1.0'
+   implementation 'top.gtf35.lib.withyebai:BeautifulSwitch:1.1'
    ....
 }
 ```

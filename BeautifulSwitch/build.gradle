@@ -37,7 +37,7 @@ publish {
     userOrg = 'gtfdeyouxiang'  //jcenter的用户名
     groupId = 'top.gtf35.lib.withyebai'    //组织id
     artifactId = 'BeautifulSwitch'    //libName
-    publishVersion = '1.0'        //libVersion
+    publishVersion = '1.1'        //libVersion
     desc = 'an beautiful switch on Android'//lib desc
     website = 'https://github.com/gtf35/beautiful_switch' //lib的地址
     bintrayUser = bintrayUserVal //上面task中读取到的jcenterName
