@@ -6,7 +6,7 @@
 
 诶嘿，咱们完全不慌嘀，走起来
 
-![完全不慌](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/wqbh.jpg)
+![完全不慌](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bqb/wqbh.jpg)
 
 新建一个「Empty Activity」 的项目，包名：「top.gtf35.customui」，API 18
 
@@ -26,7 +26,7 @@
 
 不管好看不好看，就叫漂亮的控件，就是这么自信
 
-![就是自信](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/zmzx.jpg)
+![就是自信](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bqb/zmzx.jpg)
 
 于是现在就应该能看到两个模块了，默认的「app」和新建的「BeautifulSwitch」
 
@@ -46,7 +46,7 @@ dependencies {
 
 自定义控件的家就建好了。啥玩意，这年头控件都有房了？
 
-![没车没房](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/mcmf.gif)
+![没车没房](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bqb/mcmf.gif)
 
 唉，在 BeautifulSwitch 项目下新建一个 BeautifulSwitch 类继承自 View 开始画控件
 
@@ -66,7 +66,7 @@ dependencies {
 
 还记得自定义控件的精髓么，onDraw 呀
 
-![相视一笑](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/xsyx.jpg)
+![相视一笑](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bqb/xsyx.jpg)
 
 按 ctrl + o 打开重写界面，直接键盘输入 onDraw 即可自动选中，回车确定
 
@@ -78,7 +78,7 @@ dependencies {
 
 可以看到，一共分为5部分，左边半圆(半径30)，右边半圆，上直线(长度130)，下直线，中间圆心(直径20)，其中线条宽度10
 
-![墨磨叽](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/mj.jpg)
+![墨磨叽](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bqb/mj.jpg)
 
 定义一个绘制相关信息类，「Infos」：
 
@@ -106,7 +106,7 @@ dependencies {
 
 用这个比例缩放下高，要是超过画布的高度证明需要按高重新计算缩放比，这时候就得到了绘制需要的尺寸。但是控件在水平上填充，在垂直上居中才会好看。所以还需要直线长度填充画布宽度，需要引入并计算垂直偏移量
 
-![真闹心](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/znx.jpg)
+![真闹心](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bqb/znx.jpg)
 
 然重写 onMeasure 调用我们的计算方法：
 
@@ -171,7 +171,7 @@ dependencies {
 
 细节在截图中，不知道数学计算如何得出来的自己画个草图就知道了
 
-![你放屁](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/nfp.jpg)
+![你放屁](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bqb/nfp.jpg)
 
 是时候让他动起来了，动画分成两部分：中间小圆的移动和颜色的渐变。
 
@@ -207,7 +207,7 @@ ObjectAnimator animator = ObjectAnimator.ofInt(this, "progress", mProgress, 100)
 
 没毛病，so easy
 
-![666](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/666.jpg)
+![666](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bqb/666.jpg)
 
 下面我们上传 GitHub，造福社会
 
@@ -251,7 +251,7 @@ ObjectAnimator animator = ObjectAnimator.ofInt(this, "progress", mProgress, 100)
 
 现在我们来考虑上传到 jcenter ，让别人可以一句 implementation 就依赖你的控件
 
-![谁爱用呀](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/wu.jpg)
+![谁爱用呀](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bqb/wu.jpg)
 
 说的好像有人用一样，🤦‍♀️，我们先注册一个 jcenter 的账号
 
@@ -312,7 +312,7 @@ ObjectAnimator animator = ObjectAnimator.ofInt(this, "progress", mProgress, 100)
 
 这个文件本身是存放的本地的目录，属于不应该手动编辑的。但是由于他只在本机有效的特性，不会被 Android Studio 给长传到仓库(想选都找不到这个文件)。放在这里可以防止不小心上传自己的 Key
 
-![âæåé¬¼âçå¾çæç´¢ç»æ](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/yng.jpg)
+![有内鬼](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bqb/yng.jpg)
 
 我们打开项目根目录下的 build.gradle
 
@@ -407,7 +407,7 @@ dependencies {
 
 来使用你的控件了。现在给你的控件写一个小 demo 和 readme 列出介绍个用法就好了
 
-![bye](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bye.jpg)
+![bye](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bqb/bye.jpg)
 
 最后贴一个完成的动图
 
@@ -415,5 +415,5 @@ dependencies {
 
 这个上述的所有代码可在我的[GitHub](https://github.com/gtf35/beautiful_switch/)上获取，最后感谢我的搭档夜白，大家有缘江湖再见
 
-![江湖再见](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/jhzj.jpg)
+![江湖再见](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bqb/jhzj.jpg)
 
