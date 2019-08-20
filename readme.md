@@ -7,6 +7,10 @@
 ## 0 效果图
 ![效果图](https://github.com/gtf35/beautiful_switch/blob/master/static/switch.gif)
 
+讲解文章：[做一个漂亮的开关并发布 Jcenter 仓库](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/blog.md)
+
+兄弟控件：[BeautifulSeekBar](https://github.com/gtf35/beautiful_seekbar)  一个在 Android 平台上美观的跟手进度条
+
 ## 1 设计图
 ![设计图](https://github.com/gtf35/beautiful_switch/blob/master/static/yuanpic.png)
 

@@ -30,8 +30,8 @@ import top.gtf35.withyebai.beautifulswitch.R;
 public class BeautifulSwitch extends View {
 
     private int mProgress = 0;//动画进度
-    private boolean mEnable = true;
-    private boolean mIsOpen;
+    private boolean mEnable = true;//是否启用
+    private boolean mIsOpen;//当前状态：打开/关闭
     private int mStrokeWidthOpenColor = Color.parseColor("#B5CCFF");//外框打开颜色
     private int mStrokeWidthCloseColor = Color.parseColor("#eaeff6");//外框关闭颜色
     private int mStrokeWidthColor = isOpen()? mStrokeWidthOpenColor: mStrokeWidthCloseColor;//默认外框颜色
@@ -304,7 +304,7 @@ public class BeautifulSwitch extends View {
         int halfStrokeWidth = strokeWidth/2;//溢出宽度，需要做描边保护
         int circleR = 45;//圆弧半径
         int lineX = 180;//直线长度
-        float moveY;//Y轴便宜，为了垂直居中
+        float moveY;//Y轴偏移，为了垂直居中
         int smallCircleR = 15;//内部指示器小圆的半径
         int finalHeight, finalWidth;//最后整体的宽高
         int defaultWidth = strokeWidth + 2 * circleR + lineX;//控件默认宽度
@@ -388,7 +388,7 @@ public class BeautifulSwitch extends View {
 
     /*开/关之间切换*/
     public boolean change(){
-        if (!mEnable) return isOpen();//禁用的情况下不相应
+        if (!mEnable) return isOpen();//禁用的情况下不响应
         if (isOpen()){
             close();
         } else {
