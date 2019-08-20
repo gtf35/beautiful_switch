@@ -108,7 +108,7 @@ dependencies {
 
 ![真闹心](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bqb/znx.jpg)
 
-然重写 onMeasure 调用我们的计算方法：
+然后重写 onMeasure 调用我们的计算方法：
 
 主要就是处理 wrap_content 和 match_parent
 
@@ -141,7 +141,7 @@ dependencies {
 
 定义启用/禁用/开启/关闭的暴露 api
 
-![1566277730300](C:\Users\gtf35\AppData\Roaming\Typora\typora-user-images\1566277730300.png)
+![暴露的api](C:\Users\gtf35\Desktop\自定义控件\blapi.png)
 
 因为在被系统回收后(例如屏幕旋转)会重建，全局变量会丢失，所以要重写 onSaveInstanceState  和 onRestoreInstanceState 来保存和恢复信息。
 
@@ -269,7 +269,7 @@ ObjectAnimator animator = ObjectAnimator.ofInt(this, "progress", mProgress, 100)
 
 在 name 里给仓库起个好名字， 我就叫 maven ，然后 Type 类型选 Maven ，然后 Create 创建即可。
 
-提示：名字最好就叫 maven ，这是一会插件默认的名字，如果不叫这个，一会在讲插件那里，记得对号入座修改 :)
+提示：名字最好就叫 maven ，这是一会要用的插件的默认名字，如果不叫这个，一会在讲插件那里，记得对号入座修改 :)
 
 在主界面上就能看到我们新建的仓库了
 
@@ -405,7 +405,7 @@ dependencies {
 }
 ```
 
-来使用你的控件了。现在给你的控件写一个小 demo 和 readme 列出介绍个用法就好了
+来使用你的控件了。现在给你的控件写一个小 demo 和 readme 列出介绍和用法就好了
 
 ![bye](https://github.com/gtf35/beautiful_switch/blob/master/static/blog/bqb/bye.jpg)
 
